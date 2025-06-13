@@ -21,14 +21,18 @@ cd $WORKING_DIRECTORY
 
 eval "$(conda shell.bash hook)"
 conda activate /scratch_vol0/fungi/envs/qiime2-amplicon-2024.10
+#conda activate qiime2-2021.4
 
-# Make the directory (mkdir) only if not existe already(-p)
-mkdir -p $OUTPUT/core
-mkdir -p $OUTPUT/visual
+#export PYTHONPATH="${PYTHONPATH}:/scratch_vol0/fungi/.local/lib/python3.9/site-packages/"
+#echo $PYTHONPATH
 
 # I'm doing this step in order to deal the no space left in cluster :
 export TMPDIR='/scratch_vol0/fungi'
 echo $TMPDIR
+
+# Make the directory (mkdir) only if not existe already(-p)
+mkdir -p $OUTPUT/core
+mkdir -p $OUTPUT/visual
 
 qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' \
 			    --input-path  $MANIFEST \
