@@ -77,7 +77,7 @@ mkdir -p tree
 mkdir -p export/tree
 
 eval "$(conda shell.bash hook)"
-conda activate qiime2-2021.4
+conda activate /scratch_vol0/fungi/envs/qiime2-amplicon-2024.10
 
 # I'm doing this step in order to deal the no space left in cluster :
 export TMPDIR='/scratch_vol0/fungi'
@@ -134,7 +134,7 @@ mkdir -p tree
 mkdir -p export/tree
 
 eval "$(conda shell.bash hook)"
-conda activate qiime2-2021.4
+conda activate /scratch_vol0/fungi/envs/qiime2-amplicon-2024.10
 
 # I'm doing this step in order to deal the no space left in cluster :
 export TMPDIR='/scratch_vol0/fungi'
@@ -191,7 +191,7 @@ mkdir -p tree
 mkdir -p export/tree
 
 eval "$(conda shell.bash hook)"
-conda activate qiime2-2021.4
+conda activate /scratch_vol0/fungi/envs/qiime2-amplicon-2024.10
 
 # I'm doing this step in order to deal the no space left in cluster :
 export TMPDIR='/scratch_vol0/fungi'
