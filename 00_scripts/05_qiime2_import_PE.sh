@@ -21,7 +21,7 @@ cd $WORKING_DIRECTORY
 
 eval "$(conda shell.bash hook)"
 conda activate /scratch_vol0/fungi/envs/qiime2-amplicon-2024.10
-#conda activate qiime2-2021.4
+#conda activate /scratch_vol0/fungi/envs/qiime2-amplicon-2024.10
 
 #export PYTHONPATH="${PYTHONPATH}:/scratch_vol0/fungi/.local/lib/python3.9/site-packages/"
 #echo $PYTHONPATH
@@ -69,7 +69,7 @@ TMPDIR=/scratch_vol0
 cd $WORKING_DIRECTORY
 
 eval "$(conda shell.bash hook)"
-conda activate qiime2-2021.4
+conda activate /scratch_vol0/fungi/envs/qiime2-amplicon-2024.10
 
 # Make the directory (mkdir) only if not existe already(-p)
 mkdir -p $OUTPUT/core
@@ -115,7 +115,7 @@ TMPDIR=/scratch_vol0
 cd $WORKING_DIRECTORY
 
 eval "$(conda shell.bash hook)"
-conda activate qiime2-2021.4
+conda activate /scratch_vol0/fungi/envs/qiime2-amplicon-2024.10
 
 # Make the directory (mkdir) only if not existe already(-p)
 mkdir -p $OUTPUT/core
@@ -161,7 +161,7 @@ TMPDIR=/scratch_vol0
 cd $WORKING_DIRECTORY
 
 eval "$(conda shell.bash hook)"
-conda activate qiime2-2021.4
+conda activate /scratch_vol0/fungi/envs/qiime2-amplicon-2024.10
 
 # Make the directory (mkdir) only if not existe already(-p)
 mkdir -p $OUTPUT/core
