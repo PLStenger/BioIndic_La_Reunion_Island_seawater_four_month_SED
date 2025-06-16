@@ -134,6 +134,7 @@ qiime feature-classifier classify-consensus-blast \
   --i-reference-taxonomy taxonomy/DataSeq.qza \
   --p-perc-identity 0.70 \
   --o-classification taxonomy/taxonomy_reads-per-batch_RepSeq.qza \
+  --output-dir taxonomy \
   --verbose
 
 qiime feature-classifier classify-consensus-vsearch \
@@ -147,6 +148,7 @@ qiime feature-classifier classify-consensus-vsearch \
     --p-strand 'both' \
     --p-unassignable-label 'Unassigned' \
     --p-threads 12 \
+    --output-dir taxonomy \
     --o-classification taxonomy/taxonomy_reads-per-batch_RepSeq_vsearch.qza
     
 qiime feature-classifier classify-consensus-vsearch \
