@@ -130,18 +130,15 @@ echo $TMPDIR
 
 cd $WORKING_DIRECTORY
 
-qiime feature-classifier classify-consensus-blast --i-query core/RepSeq.qza --i-reference-reads taxonomy/RefTaxo.qza --i-reference-taxonomy taxonomy/DataSeq.qza --p-perc-identity 0.70 --o-classification taxonomy/taxonomy_reads-per-batch_RepSeq.qza --verbose
-
-qiime feature-classifier classify-consensus-blast \ --i-query core/RepSeq.qza \ --i-reference-reads taxonomy/RefTaxo.qza \ --i-reference-taxonomy taxonomy/DataSeq.qza \ --p-perc-identity 0.70 \ --o-classification taxonomy/taxonomy_reads-per-batch_RepSeq.qza \ --verbose
-
 qiime feature-classifier classify-consensus-blast \
   --i-query core/RepSeq.qza \
   --i-reference-reads taxonomy/RefTaxo.qza \
   --i-reference-taxonomy taxonomy/DataSeq.qza \
   --p-perc-identity 0.70 \
+  --o-search-results taxonomy/blast_search_results.qza \
   --o-classification taxonomy/taxonomy_reads-per-batch_RepSeq.qza \
   --verbose
-
+  
 qiime feature-classifier classify-consensus-vsearch \
     --i-query core/RepSeq.qza  \
     --i-reference-reads taxonomy/RefTaxo.qza \
